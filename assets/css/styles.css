@@ -150,7 +150,7 @@ hr {
 }
 
 .services-banner {
-  min-height: 450px;
+  min-height: 500px;
   background-image: url('../../assets/img/homeBanner.jpg');
   background-position: center;
   background-size: cover;
@@ -158,12 +158,16 @@ hr {
   position: relative;
 }
 
-.services-banner .overlay {
-  height: 450px;
+.services-banner::before {
+  content: ' ';
+  position: absolute;
+  background-color: rgba(30,30,30,0.6);
+  width: 100%;
+  height: 100%;
 }
 
-.services-banner .container-fluid {
-  background-color: rgba(0,0,0,0.21);
+.services-banner .container {
+  z-index: 1;
 }
 
 .services-banner p {
@@ -184,25 +188,61 @@ hr {
 
 @media (max-width: 480px) {
   .banner-logo {
-    height: 80px;
+    height: 100px;
   }
 }
 
 @media (max-width: 480px) {
   .banner-section {
-    height: 480px;
+    height: 650px;
   }
 }
 
 @media (max-width: 480px) {
   .banner-section .overlay {
-    height: 480px;
+    height: 650px;
   }
 }
 
 @media (max-width: 480px) {
   .banner-section .container {
-    height: 480px;
+    height: 650px;
+  }
+}
+
+.tabofcontents .card-header {
+  background-color: #ffffff !important;
+}
+
+.tabofcontents .card {
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.tabofcontents .card .card-header a {
+  color: #1b1b1b;
+}
+
+.tabofcontents .card .card-header a:hover {
+  text-decoration: none;
+}
+
+.card.border-0.review-card img {
+  height: 70px;
+  margin-right: 20px;
+}
+
+.review-card hr {
+  border-top: 1px solid #dbdbdb80;
+}
+
+.quickaction ul li:hover {
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 576px) {
+  .card.border-0.review-card.mb-4 {
+    text-align: center;
   }
 }
 
