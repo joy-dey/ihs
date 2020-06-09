@@ -1,0 +1,208 @@
+.brand-logo {
+  max-height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.banner-section {
+  width: 100%;
+  height: 780px;
+  background-image: url('../../assets/img/homeBanner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 780px;
+  background: rgba(17,17,17,0.52);
+}
+
+.container.banner-title {
+  height: 780px;
+}
+
+.banner-heading {
+  font-size: 3rem;
+}
+
+.banner-logo {
+  height: 130px;
+  margin: 15px;
+}
+
+.section-heading {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.divider {
+  display: block;
+  margin: 30px 0;
+  width: 150px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.info-banner .divider {
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.btn-book {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /*transform: rotate(90deg);*/
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 0;
+  z-index: 20;
+  background-color: #138496;
+  border-color: #138496;
+}
+
+.nav-link.font-weight-bold.text-info.btn.btn-info-outlined {
+  border: 1px solid;
+}
+
+.fas.fa-phone {
+  transform: rotate(90deg);
+}
+
+.nav-link.font-weight-bold.text-info.phno {
+  font-size: 1rem;
+}
+
+.partner-hospitals .divider {
+  background-color: #17a2bf;
+  margin: 0 auto;
+}
+
+.col-md-3.demo-image {
+  height: 140px;
+}
+
+.members-section .divider {
+  margin: 0 auto;
+}
+
+.figure.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.figure-img.img-fluid {
+  max-height: 100px;
+  margin-top: 20px;
+}
+
+.case-studies-section .divider {
+  margin: 0 auto;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #17a2b8;
+}
+
+.coverage .divider {
+  margin: 0 auto;
+}
+
+.counter-section.coverage.py-5.bg-info {
+  background-image: url('../../assets/img/texture.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.place-coverage.py-5.bg-info {
+  background-image: url('../../assets/img/map.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1.4px dashed #ffffff;
+}
+
+@media (max-width: 767px) {
+  footer .container-fluid {
+    text-align: center;
+  }
+}
+
+.services-banner {
+  min-height: 450px;
+  background-image: url('../../assets/img/homeBanner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.services-banner .overlay {
+  height: 450px;
+}
+
+.services-banner .container-fluid {
+  background-color: rgba(0,0,0,0.21);
+}
+
+.services-banner p {
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .banner-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-logo {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section {
+    height: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section .overlay {
+    height: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section .container {
+    height: 480px;
+  }
+}
+
