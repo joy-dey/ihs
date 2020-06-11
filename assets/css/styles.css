@@ -246,3 +246,8 @@ hr {
   }
 }
 
+.about-page .services-banner {
+  background-image: url(../../assets/img/aboutBanner.jpg);
+  min-height: 550px;
+}
+
