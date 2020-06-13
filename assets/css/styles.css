@@ -251,3 +251,7 @@ hr {
   min-height: 550px;
 }
 
+.opacity {
+  opacity: .5;
+}
+
