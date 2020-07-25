@@ -27,19 +27,16 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Our Services</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item active py-2" role="presentation" href="servicescommon.html"><i class="fas fa-plane-departure mr-2 small"></i>Medical Tourism</a>
-                            <a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-user-nurse mr-2 small"></i>Nursing Care</a>
-                            <a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-user-md mr-2"></i>Doctors</a><a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-bed mr-2"></i>Physiotherapy</a>
-                            <a class="dropdown-item py-2" role="presentation" href="ambulance-search.html"><i class="fas fa-ambulance mr-2"></i>Ambulance</a>
-                            <a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-briefcase-medical mr-2"></i>Surgical Items</a>
-                            <a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-tablets mr-2"></i>Pharmacy Services</a><a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-diagnoses mr-2"></i>Diagnostics Services</a>
-                            <a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-female mr-2"></i>Aaya's at Home</a>
-                            <a class="dropdown-item py-2" role="presentation" href="servicescommon.html"><i class="fas fa-blind mr-2"></i>Old Age Care</a><a class="dropdown-item" role="presentation" href="servicescommon.html"><i class="fas fa-sort-amount-up mr-2"></i>Nutrition &amp; Growth</a>
-                            <a class="dropdown-item" role="presentation" href="servicescommon.html"><i class="fas fa-users mr-2"></i>Counselling</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item py-2" role="presentation" href="nursing.html"><i class="fas fa-user-nurse mr-2 small"></i>Nursing Care</a>
+                            <a class="dropdown-item py-2" role="presentation" href="physiotherapy.html"><i class="fas fa-bed mr-2"></i>Physiotherapy</a>
+                            <a class="dropdown-item py-2" role="presentation" href="equipment.html"><i class="fas fa-briefcase-medical mr-2"></i>Equipments for Rent</a>
+                            <a class="dropdown-item py-2" role="presentation" href="diagnosticServices.html"><i class="fas fa-diagnoses mr-2"></i>Diagnostics Services</a>
+                            <a class="dropdown-item py-2" role="presentation" href="aaya.html"><i class="fas fa-female mr-2"></i>Aaya's at Home</a>
+                            <a class="dropdown-item" role="presentation" href="nutritionAndGrowth.html"><i class="fas fa-sort-amount-up mr-2"></i>Nutrition &amp; Growth</a>
                         </div>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blogs</a></li>
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold text-info btn btn-info-outlined" href="tel:+917005400923"><i class="fas fa-phone mr-2 small"></i>+91 (7005) 400-923<span class="small">&nbsp;(Outside Tripura)</span></a></li>
@@ -50,7 +47,7 @@
         </div>
     </nav>
     <section class="banner-section">
-        <div class="overlay"></div><button class="btn btn-info btn-lg btn-book rounded-circle shadow" data-bs-hover-animate="tada" type="button" data-toggle="modal" data-target="#booking"><i class="far fa-calendar-alt"></i></button>
+        <div class="overlay"></div>
         <div class="modal fade" role="dialog" tabindex="-1" id="booking">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -82,22 +79,11 @@
 
             <div class="container">
                 <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/aboutBanner.jpg">
-                            <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-plane-departure fa-2x d-block"></i>
-                                <p class="h5 my-3">Mediacal Tourism in India &amp; Abroad</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
-                        </div>
-                    </div>
+
                     <div class="item">
                         <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/homeBanner.jpg">
                             <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-user-nurse fa-2x d-block"></i>
-                                <p class="h5 my-3">Nursing Care at Home</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/docConsultation.jpg">
-                            <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-user-md fa-2x d-block"></i>
-                                <p class="h5 my-3">Doctor Consultations</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
+                                <p class="h5 my-3">Nursing Care at Home</p><a href="nursing.html" class="btn btn-light btn-sm" type="button">Learn More</a></div>
                         </div>
                     </div>
 
@@ -105,59 +91,34 @@
                     <div class="item">
                         <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/physiotherapy.jpg">
                             <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-bed fa-2x d-block"></i>
-                                <p class="h5 my-3">Physiotherapy &amp; Naturopathy</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/ambulanceService.jpg">
-                            <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-ambulance fa-2x d-block"></i>
-                                <p class="h5 my-3">Ambulance Service</p><a href="ambulance-search.html" class="btn btn-light btn-sm" type="button">Learn More</a></div>
+                                <p class="h5 my-3">Physiotherapy Services</p><a href="physiotherapy.html" class="btn btn-light btn-sm" type="button">Learn More</a></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/surgicalEquipments.jpg">
                             <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-briefcase-medical fa-2x d-block"></i>
-                                <p class="h5 my-3">Medical &amp; Surgical Items for Rent</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
+                                <p class="h5 my-3">Medical &amp; Equipments for Rent for Rent</p><a href="equipment.html" class="btn btn-light btn-sm" type="button">Learn More</a></div>
                         </div>
                     </div>
 
-
-
-                    <div class="item">
-                        <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/medicine.jpg">
-                            <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-tablets fa-2x d-block"></i>
-                                <p class="h5 my-3">Pharmacy Services</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
-                        </div>
-                    </div>
                     <div class="item">
                         <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/pathology.jpg">
                             <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-diagnoses fa-2x d-block"></i>
-                                <p class="h5 my-3">Diagnostic Services</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
+                                <p class="h5 my-3">Diagnostic Services</p><a href="diagnosticServices.html" class="btn btn-light btn-sm" type="button">Learn More</a></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/aaya.jpg">
                             <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-female fa-2x d-block"></i>
-                                <p class="h5 my-3">Aaya's at Home</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="item">
-                        <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/oldAge.jpg">
-                            <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-blind fa-2x d-block"></i>
-                                <p class="h5 my-3">Old Age Care, Counselling & Health Education</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
+                                <p class="h5 my-3">Aaya's at Home</p><a href="aaya.html" class="btn btn-light btn-sm" type="button">Learn More</a></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card text-center bg-dark border-0"><img class="card-img-top w-100 d-block opacity card-img" src="assets/img/nutrition.jpg">
                             <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay text-white"><i class="fas fa-sort-amount-up fa-2x d-block"></i>
-                                <p class="h5 my-3">Nutrition &amp; Growth Monitoring</p><button class="btn btn-light btn-sm" type="button">Learn More</button></div>
+                                <p class="h5 my-3">Nutrition &amp; Growth Monitoring</p><a href="nutritionAndGrowth.html" class="btn btn-light btn-sm" type="button">Learn More</a></div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -266,9 +227,6 @@
             <h2 class="section-heading text-info text-center">Media &amp; Press Coverage</h2><span class="divider bg-info mx-auto mt-0 mb-0"></span>
             <p class="text-center mt-2"><br>Leading newspapers and News Channels like Dainik Sambad, Hallabol, Akash Tripura, Syandan Patrika and more have featured Imperial Healthcare Services showcasing our approach, effort and impact in the home health care sector.<br><br></p>
             <ul class="list-inline text-center my-4">
-                <li class="list-inline-item mx-2"><img data-aos="zoom-in" src="assets/img/dainikSambad.png"></li>
-                <li class="list-inline-item m-2"><img data-aos="zoom-in" src="assets/img/hallabol.png"></li>
-                <li class="list-inline-item m-2"><img data-aos="zoom-in" src="assets/img/akashTripura.png"></li>
                 <li class="list-inline-item m-2"><img data-aos="zoom-in" src="assets/img/syndanPatrika.png"></li>
             </ul><button class="btn btn-info mt-3" type="button">Read More<i class="fas fa-arrow-circle-right ml-2"></i></button></div>
     </section>
@@ -298,6 +256,16 @@
             </ul>
         </div>
     </section>
+
+    <section class="bottom-cta fixed-bottom bg-white shadow" id="cta">
+        <div class="container d-flex justify-content-between py-3">
+            <span onclick="window.location.href='tel:+916909084085'"><i class="fas fa-phone fa-2x text-info"></i></span>
+            <a href="" class="btn btn-outline-info">Book Now</a>
+            <span><i class="fas fa-comment-dots fa-2x text-info"></i></span>
+        </div>
+    </section>
+
+    <!-- <button class="btn btn-info btn-lg btn-book shadow" data-bs-hover-animate="tada" type="button" data-toggle="modal" data-target="#booking"><i class="far fa-calendar-alt"></i> <span class="small">Book Now</span></button> -->
     <footer class="pt-5 pb-4 bg-dark text-white">
         <div class="container-fluid px-4">
             <div class="row">
@@ -375,7 +343,7 @@
                 </div>
                 <div class="col-md-4 text-center">
                     <ul class="list-inline">
-                        <li class="list-inline-item">Copyright 2020 Imperial Healthcare Services</li>
+                        <li class="list-inline-item">Copyright <span id="year"></span> Imperial Healthcare Services</li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center">
@@ -400,6 +368,7 @@
                 <li class="list-inline-item mx-2">Sikkim</li>
             </ul>
         </div>
+        <div class="container py-4"></div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

@@ -62,14 +62,18 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /*transform: rotate(90deg);*/
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    border-radius: 0;
+    border-radius: 1.5rem;
+    height: 3rem;
+    line-height: 2.25rem;
+    padding: 0 1.25rem;
+    width: auto;
     z-index: 20;
     background-color: #138496;
     border-color: #138496;
+}
+
+#cta {
+    display: none;
 }
 
 .nav-link.font-weight-bold.text-info.btn.btn-info-outlined {
