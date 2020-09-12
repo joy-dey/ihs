@@ -134,7 +134,7 @@ p {
     background-position: top left;
 }
 
-.place-coverage.py-5.bg-info {
+.place-coverage.py-5.bg-secondary {
     background-image: url('../../assets/img/map.png');
     background-repeat: no-repeat;
     background-position: center;
