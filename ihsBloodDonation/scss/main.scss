@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+$primary-color: #9d1b21;
+$heading-color:#7ea7d2;
+$success-color: #46b179;
+$body-color: #ebebeb;
+@import 'grid';
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    max-height: 70px;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        font-family: 'Poppins', sans-serif;
+        .brand-image {
+            max-width: 80px;
+            cursor: pointer;
+        }
+        .nav-toggler {
+            border: none;
+            background-color: $primary-color;
+            display: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            z-index: 5;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+        .navigation {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            .navigation-item {
+                margin-right: 1.4rem;
+                .navigation-link {
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 2rem;
+    background-color: $primary-color;
+    filter: brightness(1);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.input-control {
+    padding: .8rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 15px rgba(80, 80, 80, 0.15);
+    &:focus {
+        outline: 0;
+    }
+}
+
+.button {
+    background-color: $primary-color;
+    padding: .8rem 1.5rem;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: 0;
+    margin: .5rem 0;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: clamp(1.4rem, 3vw, 2.5rem);
+    color: $heading-color;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-page {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, .7);
+        top: 0;
+        bottom: 0;
+    }
+    .blood-search {
+        z-index: 2;
+        filter: brightness(1);
+        main {
+            height: calc(95vh - 80px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container {
+                width: 85%;
+                margin: 0 auto;
+                text-align: center;
+                .motive {
+                    a {
+                        font-weight: 700;
+                        color: $primary-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.registration-page {
+    background-color: $body-color;
+    main {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        padding: 2rem 0;
+        .input-control {
+            box-shadow: none;
+            padding: .9rem 1.1rem;
+        }
+    }
+}
+
+.search-page {
+    background-color: $body-color;
+    main {
+        .container {
+            p {
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                color: #585858;
+            }
+            .search-output {
+                padding: 1.5rem 0;
+            }
+            .card {
+                background-color: #ffffff;
+                padding: .5rem 1.2rem;
+                .card-body {
+                    display: flex;
+                    justify-content: space-between;
+                    .blood-group-holder {
+                        height: 100%;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        .blood-group {
+                            width: 45px;
+                            height: 45px;
+                            background-color: $primary-color;
+                            border-radius: 50%;
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 700;
+                        }
+                    }
+                    .donor-details {
+                        p {
+                            margin: 0;
+                            text-transform: capitalize;
+                        }
+                        .name {
+                            font-size: 1.1rem;
+                        }
+                        .address {
+                            font-size: .8rem;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $heading-color;
+                            font-weight: 600;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.facts-page {
+    background-color: $body-color;
+    main {
+        margin-top: 1.5rem;
+        .container {
+            .quotes-card {
+                padding: 1.2rem 2rem;
+                background-color: #fff;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 750px;
+                margin: 0 auto;
+                text-align: center;
+                position: relative;
+                box-shadow: 0 4px 10px rgba(80, 80, 80, 0.15);
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: $heading-color;
+                    &::before,
+                    &::after {
+                        content: '"';
+                    }
+                }
+            }
+            .fact-holder {
+                margin-top: 2rem;
+                padding: 2rem;
+                h2 {
+                    text-align: center;
+                    color: $heading-color;
+                }
+            }
+            .facts-list {
+                max-width: 750px;
+                margin: 0 auto;
+                padding: 0;
+                .facts {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    header {
+        nav {
+            .nav-toggler {
+                display: block;
+                cursor: pointer;
+            }
+            .navigation {
+                display: none;
+            }
+            .navigation-show {
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                background-color: $primary-color;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+                .navigation-item {
+                    width: 100%;
+                    text-align: center;
+                    margin-right: 0;
+                    font-size: 2rem;
+                    .navigation-link {
+                        color: #ffffff;
+                        &:hover {
+                            border-bottom: 2px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

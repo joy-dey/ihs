@@ -80,6 +80,16 @@ p {
     border: 1px solid;
 }
 
+.blood-donation {
+    background: rgb(255 233 234);
+    border-radius: 4px;
+}
+
+.blood-donation .nav-link {
+    color: rgb(157, 27, 33) !important;
+    margin-right: 0 !important;
+}
+
 .fas.fa-phone {
     transform: rotate(90deg);
 }

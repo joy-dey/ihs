@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodDonation Portal - IHS</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="home-page">
+    <section class="blood-search">
+        <header>
+            <nav>
+                <!-- <h2 class="brand-name">BloodDonation</h2> -->
+                <img src="assets/img/logo.svg" alt="IHS BLOOD Archive logo" class="brand-image">
+                <button class="nav-toggler">
+                    <img src="assets/img/menu-24px.svg" alt="" class="toggler-icon">
+                </button>
+                <ul class="navigation" role="navigation">
+                    <li class="navigation-item" role="presentation">
+                        <a href="index.html" class="navigation-link">Home</a>
+                    </li>
+                    <li class="navigation-item" role="presentation">
+                        <a href="register.html" class="navigation-link">Be a Donor!</a>
+                    </li>
+                    <li class="navigation-item" role="presentation">
+                        <a href="facts.html" class="navigation-link">Facts</a>
+                    </li>
+                    <!-- <li class="navigation-item" role="presentation">
+                        <a href="#" class="navigation-link">Login</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <h1>Meet Agartala's one of the largest online blood information archive.</h1>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <input type="text" name="location" id="location" class="input-control" placeholder="location" list="cities">
+                        <datalist id="cities"></datalist>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <select name="bloodGroup" id="bloodGrp" class="input-control">
+                        <optgroup label="Select Blood Group">
+                            <option value="1">A+</option>
+                            <option value="2">O+</option>
+                            <option value="3">B+</option>
+                            <option value="4">AB+</option>
+                            <option value="5">A-</option>
+                            <option value="6">O-</option>
+                            <option value="7">B-</option>
+                            <option value="8">AB-</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <button class="button" onclick="window.location.href='search.html'">Search</button>
+                    </div>
+                </div>
+                <p class="motive">Donate your blood and make a difference. <a href="register.html">Join Us!</a></p>
+            </section>
+        </main>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
